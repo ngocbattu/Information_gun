@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ChiTietSanPhamActivity">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/toolbar_trang_chu"
+            android:background="#03A9F4"
+              />
+    <ImageView
+        android:id="@+id/image_anh_gun_ct"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@drawable/sung1"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_trang_chu"
+         />
+    <TextView
+        android:id="@+id/txt_ten_sung_ct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tên súng"
+        app:layout_constraintTop_toBottomOf="@+id/image_anh_gun_ct"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+         />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nhà sản xuất"
+        app:layout_constraintTop_toBottomOf="@+id/txt_ten_sung_ct"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/txt_nha_san_xuat_ct"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quốc gia"
+        app:layout_constraintTop_toBottomOf="@+id/txt_nha_san_xuat_ct"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/txt_quoc_gia_ct"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
